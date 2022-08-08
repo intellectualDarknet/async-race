@@ -1,0 +1,23 @@
+.single {
+  border-bottom: 1px dashed #212121;
+
+  &__btn {
+    background-color:none;
+    margin: 0 10px;
+  }
+
+  &__right {
+    position: absolute;
+    right: 150px;
+  }
+
+  &__row {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__svg {
+    transform:translate(0,23px);
+  }
+}
