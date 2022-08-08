@@ -1,0 +1,36 @@
+.header {
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+ 
+  &__flex {
+    display: flex;
+    align-items: center;
+  }
+
+  &__nav {
+    background-color: #fbfaf9;
+  }
+
+  &__card-btn {
+    
+    background-color: red !important;
+    color: white;
+    transition: background-color .2s ease-out;
+    border: 0px !important;
+    font-size: 10px !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    width: 14px !important;
+    height: 14px !important;
+    transform: translate();
+  }
+
+  &__mobile {
+    transform: translate(25px, -43px);
+  }
+
+}
