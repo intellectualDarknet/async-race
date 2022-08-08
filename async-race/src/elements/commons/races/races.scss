@@ -1,0 +1,19 @@
+@import '../../../mixins.scss';
+
+.addcard {
+
+  &__lain {
+    display: flex;
+    align-items: center;
+  }
+
+  &__wrapper {
+    padding: 0 10px;
+  }
+}
+
+.races {
+  &__wrapper {
+    padding: 0px 10px;
+  }
+}
