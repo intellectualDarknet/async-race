@@ -1,0 +1,26 @@
+.winner {
+
+  text-align: center;
+
+  &__wrapper {
+    padding: 0 25px;
+  }
+
+  &__pagination {
+    margin-top: 20px;
+  }
+
+  &__tablet {
+    
+  }
+
+  &__pagination {
+    width: fit-content;
+    margin: 0 auto;
+  }
+  
+  th {
+    text-align: center;
+  }
+}
+
