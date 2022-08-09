@@ -62,7 +62,6 @@ export const carsProducer = [
   'Hyundai',
   'Porsche',
   'Nissan',
-  'бандер-мобиль',
   'шайтан-мобиль',
   'Brilliance',
   'Bentley',
