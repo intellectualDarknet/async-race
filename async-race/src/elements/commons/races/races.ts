@@ -72,9 +72,6 @@ export class RacesComponent extends BaseComponent {
 
   public defineRaceReset() {
     const miniarray = Array.from(transferService.defineRaceResetBtn.keys());
-    console.log('carsArray', transferService.carsArray);
-    console.log('miniarray', miniarray);
-    console.log('set', new Set([...miniarray, ...transferService.carsArray]));
     if (new Set([...miniarray, ...transferService.carsArray]).size != miniarray.length + transferService.carsArray.length) {
       this.raceBtn.classList.add('disabled');
       this.resetBtn.classList.remove('disabled');
@@ -100,7 +97,6 @@ export class RacesComponent extends BaseComponent {
       },
     });
     this.getCarsArray = await cars.json();
-    console.log(this.getCarsArray);
     const NamingArray: string[] = [];
     this.getCarsArray.forEach((a: Icar) => NamingArray.push(a.name));
     transferService.countCars = this.getCarsArray.length;
