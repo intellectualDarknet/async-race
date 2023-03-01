@@ -1,4 +1,4 @@
-export const BASE_URL = 'intellectualdarknet-JSFE2022Q1/#';
+export const BASE_URL = '';
 export const SERVER_URL = 'https://async-race-back.onrender.com/';
 export const carXmark = [
   'LFA',
