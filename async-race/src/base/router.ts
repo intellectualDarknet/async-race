@@ -1,5 +1,4 @@
 import { Watcher } from './watcher';
-import { BASE_URL } from '../elements/consts-func-enum/constants';
 import { Component } from './component';
 import { Subscription } from './subscription';
 import { globalEventsService } from '../elements/global-events/global-events.service';
@@ -30,11 +29,11 @@ export class RouterComponent extends HTMLElement {
   }
 
   public get matchUrlRegExp(): RegExp {
-    return new RegExp(`\^${BASE_URL}\(\/${this.props.baseUrl}\)\?\/${this.renderedUrl}\(\/.\*\)\?\$`);
+    return new RegExp(`\^${process.env.BASE_URL}\(\/${this.props.baseUrl}\)\?\/${this.renderedUrl}\(\/.\*\)\?\$`);
   }
 
   public get fullRedirectUrl(): string {
-    return `\/${BASE_URL}\/${this.props.baseUrl ? this.props.baseUrl + '/' : ''}${this.redirectUrl}`;
+    return `\/${process.env.BASE_URL}\/${this.props.baseUrl ? this.props.baseUrl + '/' : ''}${this.redirectUrl}`;
   }
 
   constructor() {
